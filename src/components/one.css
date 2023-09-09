@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@600&display=swap");
+body {
+
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  font-family: "Arial", cursive;
+}
+.center {
+  position: relative;
+  padding: 50px 50px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.4);
+ 
+}
+.center h1 {
+  font-size: 2em;
+  border-left: 5px solid rgb(47, 186, 29);
+  padding: 5px;
+  color: #000;
+  letter-spacing: 5px;
+  margin-bottom: 40px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.center .inputbox {
+  position: relative;
+  width: 330px;
+  height: 50px;
+  margin-bottom: 10px;
+  margin-left:-10 px;
+  color: rgb(156, 158, 157);
+}
+.center .inputbox input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  border: 2px solid rgb(34, 189, 20);
+  outline: none;
+  margin-top: 0px;
+  background: none;
+  padding: 5px;
+  border-radius: 10px;
+  font-size: 1em;
+}
+.center .inputbox:last-child {
+  margin-bottom: 0;
+}
+.center .inputbox span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 0.7em;
+  transition: 0.3s;
+  font-family: sans-serif;
+}
+.center .inputbox input:focus ~ span,
+.center .inputbox input:valid ~ span {
+  transform: translateX(-10px) translateY(-27px);
+  font-size: 0.8em;
+  color: rgb(0, 0, 0);
+}
+.center .inputbox [type="button"] {
+  width: 50%;
+  background: dodgerblue;
+  color: #fff;
+  border: #fff;
+}
+.center .inputbox:hover [type="button"] {
+  background: linear-gradient(45deg, rgb(72, 73, 70), dodgerblue);
+}
+.center:hover {
+    box-shadow: 0px 6px 10px rgba(30, 206, 21, 0.4);
+    transform: scale(1.03);
+  }
+.center .inputbox button{
+ 
+    width: 50%;
+    background: rgb(255, 255, 255);
+    color: rgb(16, 143, 75);
+    border: rgb(2, 2, 2);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 6px 6px rgb(186, 226, 198);
+    
+}
+.center .inputbox button:hover{
+    box-shadow: 0px 6px 10px rgb(186, 226, 198);
+    transform: scale(1.05);
+}
