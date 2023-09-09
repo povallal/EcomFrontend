@@ -70,7 +70,7 @@ const CartScreen = () => {
               <p>LKR.{getCartSubTotal()}</p>
             </div>
             <div style={{marginTop:"14px"}}>
-            <input placeholder='Enter deliver address' className='input text-center' style={{height:"60px" ,width:"300px"}} ></input>
+            <input label="Enter Delivery Address" placeholder='Enter deliver address' className='input text-center' style={{height:"60px" ,width:"300px"}} ></input>
             <button style={{ marginTop:"40px"}} >
               Submit
             </button>

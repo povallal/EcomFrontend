@@ -103,6 +103,7 @@ const HomeScreen = () => {
             />
           ))
         )}
+        
       </div>
       <div class="p-3 mb-2  text-white text-center col-6 border rounded mx-auto" style={{ backgroundColor: "#15172b", fontSize:'20px' }}  >Groceries</div>
       <div className="homescreen__products">
