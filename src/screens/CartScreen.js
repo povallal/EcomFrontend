@@ -71,19 +71,9 @@ const CartScreen = () => {
             </div>
             <div style={{marginTop:"14px"}}>
             <input placeholder='Enter deliver address' className='input text-center' style={{height:"60px" ,width:"300px"}} ></input>
-            <PayPalScriptProvider className="mb-5" options={{ "client-id": "test" }} >
-            <PayPalButtons style={{ layout: "horizontal" }} createOrder={(data, actions) => {
-                    return actions.order.create({
-                        purchase_units: [
-                            {
-                                amount: {
-                                    value: getCartSubTotal(),
-                                },
-                            },
-                        ],
-                    });
-                }}/>
-        </PayPalScriptProvider>
+            <button style={{ marginTop:"40px"}} >
+              Submit
+            </button>
             </div>
           </div>
         </div>
